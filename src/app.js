@@ -7,12 +7,12 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  console.log("Hello Raquel from the console!");
   document.querySelector("#boton").addEventListener("click", () => {
     let iconos = randomCard();
     document.querySelector("#icono1").innerHTML = iconos;
     document.querySelector("#icono2").innerHTML = iconos;
-    if (iconos[2] || iconos[3]) {
+    if (iconos == "♦" || iconos == "♥") {
       document.querySelector(".top").style.color = "red";
       document.querySelector(".bottom").style.color = "red";
     } else {
